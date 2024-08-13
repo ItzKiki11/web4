@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+header {
+    background-color: orange;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+.logo{
+    max-width: 100%;
+    height: auto;
+
+}
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.gender{
+    display: flex;
+    align-items: center;
+}
+.gender input[type="radio"]{
+    margin-right: 5px;
+}
+.gender input[type="checkbox"] {
+    margin-right: 20px;
+}
+.gender label {
+    margin-right: 20px;
+}
+fieldset {
+    border: none;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+legend {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #666;
+}  
+input[type="text"], input[type="email"], input[type="tel"], input[type="password"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}  
+input[type="checkbox"] {
+    margin-right: 10px;
+}  
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}  
+input[type="submit"], input[type="reset"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}  
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: #3e8e41;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}  
+footer {
+    background-color: orange; 
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}

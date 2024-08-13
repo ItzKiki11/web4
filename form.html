@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran Eskul</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Kiki Hadiansah XI RPL 1.jpg" width="200px">
+            <div class="text">
+                <H1>Formulir Pendaftaran Eskul</H1>
+            </div>
+        </div>
+    </header>
+
+    <form action="">
+        <fieldset>
+            <legend><b>Biodata</b></legend>
+            <label for="username">Nama Lengkap</label><br>
+            <input type="text" id="username" name="username" placeholder="Nama Lengkap"><br>
+            <label for="Tempat">Tempat Lahir</label><br>
+            <input type="text" id="Tempat" name="Tempat" placeholder="Tempat Lahir"><br>
+            <label for="tanggal">Tanggal lahir</label><br>
+            <input type="date" name="tanggal" id="tanggal"><br>
+            <label for="usia">Usia</label><br>
+            <input type="number" min="15" max="20" name="usia" id="usia"><br>
+            <label for="jenis">Jenis Kelamin</label><br>
+            <div class="gender">
+            <input type="radio" name="jenis" id="jenis" value="jenis">
+            <label for="jenis">Laki laki</label>
+            <input type="radio" name="jenis" id="jenis" value="jenis">
+            <label for="jenis">Perempuan</label><br>
+        </div>
+            <label for="agama">Agama</label>
+            <select name="agama" id="agama">
+                <option value="Islam">Islam</option>
+                <option value="Kristen P">Kristen Protestan</option>
+                <option value="Kristen K">Kristen katolik</option>
+                <option value="Hindu">Hindu</option>
+                <option value="Buddha">Buddha</option>
+                <option value="konghucu">konghucu</option>
+                <option value="Penghayat">Penghayat kepercayaan</option>
+            </select><br>
+            <label for="kelas">Kelas</label><br>
+            <input type="text" name="kelas" id="kelas">
+        </fieldset>
+    </form>
+    
+    <p></p>
+
+    <form action="">
+        <fieldset>
+            <legend><b>Alamat</b></legend>
+            <label for="alamat">Alamat Lengkap</label><br>
+            <textarea type="text" rows="1" cols="21"></textarea><br>
+            <label for="rt">RT</label>
+            <input type="number" min="1" max="50" name="rt" id="rt">
+            <label for="rw">RW</label>
+            <input type="number" min="1" max="55" name="rw" id="rw"><br>
+            <label for="desa">Desa/Kelurahan</label><br>
+            <input list="desa" name="desa">
+            <datalist id="desa">
+                <option value="Cipada">Cipada</option>
+                <option value="Jambudipa">Jambudipa</option>
+                <option value="Pada asih">Pada asih</option>
+                <option value="Pasir halang">Pasir halang</option>
+                <option value="Pasir Langu">Pasir Langu</option>
+                <option value="Tugu Mukti">Tugu Mukti</option>
+                <option value="Sadang Mekar">Sadang Mekar</option>
+            </datalist><br>
+            <label for="kecamatan">Kecamatan</label><br>
+            <input list="kecamatan" name="kecamatan">
+            <datalist id="kecamatan">
+                <option value="Cisarua">Cisarua</option>
+                <option value="Parompong">Parompong</option>
+                <option value="Lembang">Lembang</option>
+                <option value="Ngamprah">Ngamprah</option>
+                <option value="Padalarang">Padalarang</option>
+                <option value="Cipatat">Cipatat</option>
+                <option value="Cikalong Wetan">Cikalong Wetan</option>
+                <option value="Batujajar">Batujajar</option>
+            </datalist><br>
+            <label for="kab">Kabupaten/Kota</label><br>
+            <input list="kab" name="kab">
+            <datalist id="kab">
+                <option value="Kab.Bandung Barat">Kab.Bandung Barat</option>
+                <option value="Kab.Bandung">Kab.Bandung</option>
+                <option value="Kab.Cianjur">Kab.Cianjur</option>
+                <option value="Kab.Sumedang">Kab.Sumedang</option>
+                <option value="Kota Bandung">Kota Bandung</option>
+                <option value="Cimahi">Cimahi</option>
+            </datalist><br>
+            <label for="prov">Provinsi</label><br>
+            <input list="prov" name="prov">
+            <datalist id="prov">
+                <option value="Jawa Barat">Jawa Barat</option>
+                <option value="Jawa Tengah">Jawa Tengah</option>
+                <option value="Jawa Timur">Jawa Timur</option>
+                <option value="DKI Jakarta">DKI Jakarta</option>
+            </datalist><br>
+        </fieldset>
+        <p></p>
+        <fieldset>
+            <legend>Kontak</legend>
+            <label for="notel">Nomor Telepon</label><br>
+            <input type="tel" name="notel" id="notel"><br>
+            <label for="email">Email</label><br>
+            <input type="email" name="emai;" id="email"><br>
+        </fieldset>
+        <fieldset>
+            <legend>Akun</legend>
+            <label for="user">Username</label><br>
+            <input type="text" name="user" id="user"><br>
+            <label for="pw">Password</label>
+            <input type="password" name="pw" id="pw">
+            <label for="kp">Konfirmasi Password</label>
+            <input type="password" name="kp" id="kp"><br>
+        </fieldset>
+        <p></p>
+        <fieldset>
+            <label for="Eskul"><b>Pilih Ekstrakurikuler (Bisa pilih lebih satu)</b></label><br>
+            <input type="checkbox" name="bt" id="bt">
+            <label for="bt">Baket</label><br>
+            <input type="checkbox" name="bt" id="bt">
+            <label for="bt">Futsal</label><br>
+            <input type="checkbox" name="bt" id="bt">
+            <label for="bt">Perisai Diri</label><br>
+            <input type="checkbox" name="bt" id="bt">
+            <label for="bt">OSCAR</label><br>
+            <input type="checkbox" name="bt" id="bt">
+            <label for="bt">Voli</label><br>
+            <input type="checkbox" name="bt" id="bt">
+            <label for="bt">Codax</label><br>
+            <input type="checkbox" name="bt" id="bt">
+            <label for="bt">PMR</label><br>
+            <input type="checkbox" name="bt" id="bt">
+            <label for="bt">Paskibra</label><br>
+            <input type="checkbox" name="bt" id="bt">
+            <label for="bt">Pramuka</label><br>
+            <input type="checkbox" name="bt" id="bt">
+            <label for="bt">PKS</label><br>
+            <input type="checkbox" name="bt" id="bt">
+            <label for="bt">Badminton</label><br>
+            <input type="checkbox" name="bt" id="bt">
+            <label for="bt">Renang</label><br>
+            <input type="checkbox" name="bt" id="bt">
+            <label for="bt">Tinju</label><br>
+            <input type="checkbox" name="bt" id="bt">
+            <label for="bt">Esport</label><br>
+            <input type="checkbox" name="bt" id="bt">
+            <label for="bt">Memanah</label><br>
+        </fieldset>
+        <p></p>
+        <fieldset>
+            <legend>Persyaratan</legend>
+            <label for="persyaratan"><b>Upload Persyaratan</b></label><br>
+            <label for="foto">Upload pas foto 3x4</label>
+            <input type="file" id="foto" name="foto">
+            <img id="preview" src="" alt=""><br>
+            <script>
+                const fotoInput = document.getElementById('foto');
+                const previewImg = document.getElementById('preview');
+    
+                fotoInput.addEventListener('change', (e) => {
+                    const file = e.target.files[0];
+                    const reader = new FileReader();
+    
+                    reader.onload = (event) => {
+                    previewImg.src = event.target.result;
+                    };
+    
+                    reader.readAsDataURL(file);
+                });
+                </script><br><br>
+                <label for="kartu">Upload Kartu tanda pelajar</label>
+            <input type="file" id="kartu" name="kartu">
+        </fieldset>
+    </form>
+
+    <section>
+        <div class="submit">
+    <input type="submit" id="submit" value="Kirim">
+    <input type="reset" id="reset" value="Reset"><br>
+        </div>
+    </section>
+
+    <footer>
+        <p>Hak Cipta Kiki &copy; 2024</p>
+    </footer>
+</body>
+</html>
